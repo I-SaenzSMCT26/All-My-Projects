@@ -1,18 +1,49 @@
 # Ignore node_modules
+__pycache__/
 node_modules/
+.vscode/
+.vscode/extensions/
+build/
+dist/
+out/
+*.o
+*.obj
+*.dll
+
 
 # Ignore logs
 dist/
 *.log
+*.pyc
+*.pyo
+*.pyd
 
 # Ignore OS-specific files
 .DS_Store
 Thumbs.db
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Sublime Text
+*.sublime-workspace
+
 
 # Ignore large generated files
 *.zip
 *.exe
 *.mp4
 *.svg
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*.~*
+
 
 #"hello, this is an updated version of this readonly text file"
