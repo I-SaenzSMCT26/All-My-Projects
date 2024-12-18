@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fun-Web</title>
+
+<!-- hello, this is a change to thid file hello -->
+
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+      }
+
+      body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+        background-color: black;
+
+        height: 100vh;
+
+      }
+
+    
+        .sun{
+          grid-area: 1/1;
+          z-index: 3;
+          align-self: center;
+          width: 500px; height: 500px;
+          background-image: radial-gradient(at right,#ffeabb 40%, #ffee00);
+          border-radius: 50%;
+          box-shadow: 0px 0px 40px gold, inset 0px 0px 40px gold;
+
+          animation: sun 30s linear infinite;
+        }
+
+        @keyframes sun{
+          0%{
+          box-shadow: 0px 0px 400px gold, inset 0px 0px 40px gold;
+          }
+          50%{
+          box-shadow: 0px 0px 800px 300px #ff9900, inset 0px 0px 300px #ff6200;
+          }
+          100%{
+          box-shadow: 0px 0px 400px gold, inset 0px 0px 40px gold;
+          }
+        }
+
+        .mars-container{
+          grid-area: 1/1;
+          border-radius: 50%;
+          width: 2600px; height: 2500px;
+          animation: line1 234s linear infinite;
+        }
+        
+        @keyframes line1{
+          0%{
+            transform: rotate(0deg);
+          }
+  
+          100%{
+            transform: rotate(360deg);
+          }
+        }
+
+        .earth-container{
+          grid-area: 1/1;
+          border-radius: 50%;
+          width: 2100px; height: 2100px;
+          animation: line3 124s linear infinite;
+        }
+        
+        @keyframes line3{
+          0%{
+            transform: rotate(0deg);
+          }
+  
+          100%{
+            transform: rotate(360deg);
+          }
+        }
+
+        .venus-container{
+          grid-area: 1/1;
+          border-radius: 50%;
+          width: 1600px; height: 1600px;
+          animation: line2 77s linear infinite;
+        }
+        
+        @keyframes line2{
+          0%{
+            transform: rotate(0deg);
+          }
+  
+          100%{
+            transform: rotate(360deg);
+          }
+        }
+
+        .mercury-container{
+          grid-area: 1/1;
+          border-radius: 50%;
+          width: 1200px; height: 1200px;
+          animation: line1 30s linear infinite;
+        }
+        
+        @keyframes line1{
+          0%{
+            transform: rotate(0deg);
+          }
+  
+          100%{
+            transform: rotate(360deg);
+          }
+        }
+        
+
+
+              .mercury{
+                z-index: 2;
+                width: 40px; height: 40px;
+
+                background-image: radial-gradient(at right,rgba(255, 0, 195, .7), rgb(123, 123, 251) 30%, #ffc278 99%);
+                border-radius: 100px;
+                animation: mercury 5s linear infinite;
+
+              }
+
+
+              @keyframes mercury{
+                0%{
+                  box-shadow: 0px 0px 60px blue;
+                }
+                50%{
+                  box-shadow: 0px 0px 100px blue;
+                }
+                100%{
+                  transform: rotate(360deg);
+                  box-shadow: 0px 0px 60px blue;
+                } 
+              }
+              
+              .venus{
+                z-index: 2;
+                width: 50px; height: 50px;
+
+                background-image: radial-gradient(#ffbf49, #ff920c); box-shadow: 0px 0px 30px goldenrod;
+                border-radius: 100px;
+                animation: venus 10s linear infinite;
+
+              }
+
+
+              @keyframes venus{
+                0%{
+                  box-shadow: 0px 0px 60px goldenrod;
+                }
+                50%{
+                  box-shadow: 0px 0px 100px goldenrod;
+                }
+                100%{
+                  transform: rotate(360deg);
+                  box-shadow: 0px 0px 60px goldenrod;
+                } 
+              }
+
+              .earth{
+                z-index: 2;
+                width: 75px; height: 75px;
+
+                background-image: radial-gradient(at right, rgb(60, 121, 60), transparent 40%), radial-gradient(white 20%, #447fff 60%); box-shadow: 0px 0px 30px blue;
+                border-radius: 100px;
+                animation: earth 10s linear infinite;
+
+              }
+
+
+              @keyframes earth{
+                0%{
+                  box-shadow: 0px 0px 60px blue;
+                }
+                50%{
+                  box-shadow: 0px 0px 100px blue;
+                }
+                100%{
+                  transform: rotate(360deg);
+                  box-shadow: 0px 0px 60px blue;
+                } 
+              }
+
+              .mars{
+                z-index: 2;
+                width: 80px; height: 80px;
+
+                background-image: radial-gradient(#ff4400, #ff3700); box-shadow: 0px 0px 30px #aa2f02;
+                border-radius: 100px;
+                animation: mars 10s linear infinite;
+
+              }
+
+
+              @keyframes mars{
+                0%{
+                  box-shadow: 0px 0px 60px #aa2f02;
+                }
+                50%{
+                  box-shadow: 0px 0px 100px #aa2f02;
+                }
+                100%{
+                  transform: rotate(360deg);
+                  box-shadow: 0px 0px 60px #aa2f02;
+                } 
+              }
+
+
+
+
+              #spacemusic{
+                width: 800px;
+
+
+                transform: scale(2);
+                transform-origin: top=left;
+              }
+    </style>
+  </head>
+  <body>
+
+    <div class="sun"></div>
+
+    <div class="mercury-container">
+      <div class="mercury"></div>
+    </div>
+
+
+    <div class="venus-container">
+      <div class="venus"></div>
+    </div>
+
+    <div class="earth-container">
+      <div class="earth"></div>
+    </div>
+
+    <div class="mars-container">
+      <div class="mars"></div>
+    </div>
+    <audio src="music/webpage-audio.mp3" autoplay loop></audio>
+
+
+  </body>
+
+
+</html>

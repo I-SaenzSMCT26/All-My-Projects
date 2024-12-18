@@ -1,0 +1,80 @@
+*{
+    margin: 0; padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white;
+}
+body{
+    min-width: 360px;
+    height: 800px;
+}
+.background{
+    z-index: -1;
+    position: fixed;
+    min-width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,#428d90, white);
+}
+
+
+
+
+
+/*header section*/
+header{
+    z-index: 5;
+    width: 100%;
+    background-color: rgb(64, 96, 114);
+
+    display: flex; justify-content: flex-start;
+
+    box-sizing: border-box; overflow: hidden;
+
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7), inset 0px 0px 30px rgba(0, 0, 0, 0.7); 
+
+    position: fixed;
+}
+/*everything below is all the content inside the header*/
+
+    /*THIS IS THE CONTENT OF THE LEFT CONTAINER*/
+    .left-container{
+        display: flex; justify-content: space-evenly; align-items: center; 
+
+        width: 1000px;
+        margin-left: 40px;
+    }
+
+        div[class="left-container"] > *{
+            height: 80px;
+        }
+        #picture-container{
+            display: flex; justify-content: space-evenly; align-items: center;
+        }
+            #profilepic{
+                border: solid white 2px;
+                border-radius: 10%;
+                height: 75px;
+                transition: 0.3s;
+                margin-right: 20px;
+            }
+            #profilepic:hover{
+                margin-right: 10px;
+                height: 85px;
+                box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+            }
+
+        
+        #menu-section{
+            display: flex; justify-content: space-evenly;
+            width: 700px;
+            margin-right: 120px;
+        }
+            .links{
+                margin-left: 30px;
+                text-align: center;
+                align-content: center;
+                font-weight: bolder; font-size: 20pt; text-decoration: none;
+                transition: 0.5s;
+            }
+            .links:hover{
+                font-size: 21pt;
+                text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.9);
+            }
