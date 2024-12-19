@@ -16,4 +16,26 @@ console.log(firstName);
 let new_name = 'Rob';
 console.log(new_name);
 
+let PI = 3.1415;
+
 // Dollars signs $ and underscores _ are the only symbols that are allowed in variable names such as $first_name.
+
+// a variable is a box that we can store a value in.
+
+// convention variables are all caps.
+
+// always make sure that all your code is written in a clean manner. always!!
+
+
+
+
+let myFirstJob = 'Programmer';
+let myCurrentJob = 'Teacher';
+
+let job1 = 'Programmer';
+let job2 = 'Teacher';
+
+console.log(myCurrentJob);
+console.log(myFirstJob);
+console.log(job1);
+console.log(job2);
