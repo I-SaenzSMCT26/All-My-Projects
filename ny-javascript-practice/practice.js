@@ -56,6 +56,26 @@
 
 // var last_Name = 'Keinspinski'; // never use var to define a variable. this basically an obsolete method of defining a variable.
 
-const birthyearIsaac = 2000;
-const birthyearSean = 2006;
-console.log(birthyearIsaac);
+const now = 2025;
+
+const birthyearIsaac = now - 2000;
+const birthyearSean = now - 2006;
+console.log(birthyearIsaac, birthyearSean);
+
+console.log(birthyearIsaac * 2, birthyearSean / 2, 2 ** 3);
+
+const firstName = 'Tommy';
+const lastName = 'Versetti';
+console.log(firstName + ' ' + lastName);
+
+
+
+const y = 20 + 10;
+y += 20;/*this would not work beacause the fact that the declaration 'const' enforces immutability for variables,
+        which means these variable will stay the same throughout the code even if you try to redefine it.
+        so when we try to do the value of y + 20 it doesn't allow us to do so because y is already defined above with a 'const'*/
+console.log(y);
+
+let x = 10 + 6; /*this works because the 'let' declaration allows for reassignment in the future if needed.*/
+x += 20;
+console.log(x);
