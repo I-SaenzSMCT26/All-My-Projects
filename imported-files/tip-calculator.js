@@ -1,3 +1,5 @@
+'use strict';
+
 const bill = Number(prompt(`Enter Price: `)); /* The prompt has to be inside of the number 
 declaration because by default the prompt produces a string. This forces the prompt to produce a number value */
 
