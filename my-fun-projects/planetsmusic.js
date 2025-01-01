@@ -1,4 +1,4 @@
-var spacemusic = new Audio();
+const spacemusic = new Audio();
 
 spacemusic.src = 'music/webpage audio.mp3';
 
