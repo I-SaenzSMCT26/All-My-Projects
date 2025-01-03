@@ -472,12 +472,36 @@ if else lines of code that come right after*/
 
 
 
-function calcAge(birthYear){ // This is a function declaration - Function that can be used before it's declared.
-    return 2037 - birthYear;
+// function calcAge(birthYear){ // This is a function declaration - Function that can be used before it's declared.
+//     return 2037 - birthYear;
+// }
+
+// const calcAge = function(birthYear){ // This is a function expression - essentially a fucntion value stored in a variable.
+//     return 2037 - birthYear;
+// }
+
+// const calcAge = birthYear => 2037 - birthYear; // Arrow function - great for a quick one-line functions. has no this keyword (more later... )
+
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+
+let scoreDolphins = calcAverage(12, 33, 13);
+let scoreTexans = calcAverage(66, 57, 46);
+
+
+const checkWinner = function(avgDolphins, avgTexans){
+    if(avgDolphins >= 2 * avgTexans){
+        console.log(`Miami Dolphins win!! - ${avgDolphins} to ${avgTexans}`);
+    } else if(avgTexans >= 2 * avgDolphins){
+        console.log(`Houston Texans win!! - ${avgTexans} to ${avgDolphins}`);
+    } else{
+        console.log(`No team wins... 😥`)
+    }
 }
 
-const calcAge = function(birthYear){ // This is a function expression - essentially a fucntion value stored in a variable.
-    return 2037 - birthYear;
-}
+let rndScoreDolphins = Math.round(scoreDolphins * 100) / 100;
+let rndScoreTexans = Math.round(scoreTexans * 100) / 100;
 
-const calcAge = birthYear => 2037 - birthYear; // Arrow function - great for a quick one-line functions. has no this keyword (more later... )
+console.log(`${rndScoreDolphins} = Dolphins score
+${rndScoreTexans} = Texans Score`);
+
+console.log(checkWinner(rndScoreDolphins, rndScoreTexans));

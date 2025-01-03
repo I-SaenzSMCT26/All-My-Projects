@@ -91,7 +91,5 @@ if(food === wifesFood && drink === wifesDrink){
 
 
 console.log(`${myFavorite()}
-
-
 ${wifesFavorite()}`);
 }
