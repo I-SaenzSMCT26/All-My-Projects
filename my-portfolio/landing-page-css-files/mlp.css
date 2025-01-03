@@ -1,7 +1,6 @@
 *{
     margin: 0; padding: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white;
-    border: red solid 2px;
 }
 body{
     min-width: 365px;
@@ -14,8 +13,6 @@ body{
     height: 100%;
     background-image: linear-gradient(to right,#428d90, white);
 }
-
-
 
 
 
@@ -74,6 +71,7 @@ header{
             margin-right: 120px;
         }
             .links{
+                height: 100px;
                 margin-left: 30px;
                 text-align: center;
                 align-content: center;
@@ -99,10 +97,11 @@ header{
             border: none; border-radius: 8px;
             background-color: #428d90;
 
-            transition: 1s;
+            box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.9);
+            transition: .5s;
         }
             .hamburger:hover{
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
             }
 
         @media (max-width: 870px){
