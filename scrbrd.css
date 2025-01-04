@@ -3,22 +3,23 @@
     padding: 0; margin: 0;
 }
 body{
-    height: 1000px;
+    height: 2000px;
     background-image: linear-gradient(white, gray);
+    background-repeat: no-repeat;
 }
 
 .container{
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    gap: 30px;
+    gap: 20px;
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(61, 61, 61);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: clamp(40%, 50vw, 6%); padding: 50px;
-    border-radius: 20px;
+    border-radius: 60px;
 }
 
         .team-container{
@@ -64,7 +65,7 @@ body{
                             transition: .2s;
                         }
                          .score > button:hover{
-                            background-color: white; color: #428d90;
+                            background-color: white; color: orangered;
                          }
                          
                          .secondaryBtnsContainer{
@@ -72,8 +73,9 @@ body{
                             grid-template-columns: 1fr 1fr 1fr;
                             gap: 5px;
                             margin-top: 5px;
-                            width: 120px;
+                            width: 100px;
                             margin-left: auto; margin-right: auto;
+                            /* border: solid blue 2px; */
                          }
                                 .scnd-btns{
                                     align-content: center; text-align: center;
@@ -83,7 +85,13 @@ body{
                                     background-color: white; color: #428d90;
                                     box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.7);
                                     border-radius: 3px;
+
+                                    transition: 0.2;
                                 }
+                                    .scnd-btns:hover{
+                                        color: orangered;
+                                        opacity: 90%;
+                                    }
 
 
 
@@ -98,7 +106,7 @@ body{
                     cursor: pointer;
                     font-weight: bold;
                     color: white;
-                    background-color: purple;
+                    background-color: orangered;
                     width: 80%; height: 40px;
                     border: none; border-radius: 4px;
                     text-align: center; align-content: center;
@@ -108,7 +116,7 @@ body{
                         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
                     }
                     #resetBtn:active{
-                        background-color: white; color: purple;
+                        background-color: white; color: orangered;
                     }
 
 
@@ -123,7 +131,7 @@ body{
         flex-direction: column;
     }
     .team-container{
-        width: clamp(200px, 50vw, 60%);
+        width: clamp(250px, 50vw, 60%);
     }
     .reset-container{
         width: 150px;
@@ -132,21 +140,24 @@ body{
 
 /* 878px */
 @media (max-width: 878px){
-    .score button{
+    .score > button{
         width: clamp(40px, 4vw, 60px);
     }
+        #team, #opponent{
+            margin-bottom: 5px;
+        }
     .team-container{
         height: clamp(250px, 27vw, 300px);
     }
     .reset-container{
-        padding: 3px;
-        margin: none;
-        box-shadow: none;
-        height: 30px;
+        padding: 0;
+        margin: 0;
+        box-shadow: 0;
+        height: 25px;
     }
         #resetBtn{
-            background-color: white; color: purple;
+            background-color: orangered; color: white;
             height: 20px;
-            border: solid purple 2px;
         }
+
  }

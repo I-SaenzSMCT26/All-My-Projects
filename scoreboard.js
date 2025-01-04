@@ -14,11 +14,10 @@ let plusButton = (Points) => {
 };
 
 const minusButton = (Points) => {
-    Points === 'teamTeam' && team > 0 ? 
+    Points === 'teamTeam' && team > 5 ? 
     scoreScreenTeam.textContent = team -= 6 : 
-    Points === 'teamOpp' && opponent > 0 ? 
-    scoreScreenOpp.textContent = opponent -= 6 :
-    0;
+    Points === 'teamOpp' && opponent > 5 ? 
+    scoreScreenOpp.textContent = opponent -= 6 : 0;
 };
                 const plusOneButton = (Points) => {
                     Points === 'plusOneTeam' ? scoreScreenTeam.textContent = team += 1 : Points === 'plusOneOpp' ? scoreScreenOpp.textContent = opponent += 1 : 0;
@@ -44,7 +43,6 @@ function updatedTeamNames(){
     const oppSideName = document.getElementById('opponentName');
     
     const mediaQuery = window.matchMedia(`(max-width: 878px)`);
-    
     mediaQuery.matches ? oppSideName.textContent = "Opp" : oppSideName.textContent = "Opponent";
 };
 
