@@ -1,37 +1,42 @@
-let scoreScreenHome = document.getElementById('home');
+let scoreScreenTeam = document.getElementById('team');
 let scoreScreenOpp = document.getElementById('opponent');
 
 
-let home = 0;
+let team = 0;
 let opponent = 0;
 
-let plusButton = (teamPoints) => {
-    if (teamPoints === 'teamHome'){
-        home += 5;
-        scoreScreenHome.textContent = home;
-    } else if(teamPoints === 'teamOpp'){
-        opponent += 5;
-        scoreScreenOpp.textContent = opponent;
-    }
+let plusButton = (Points) => {
+    Points === 'teamTeam' ? 
+    scoreScreenTeam.textContent = team += 6 : 
+    Points === 'teamOpp' ? 
+    scoreScreenOpp.textContent = opponent += 6 :
+    0;
 };
 
-const minusButton = (teamPoints) => {
-    if(teamPoints === 'teamHome' && home > 0){
-        home -= 5;
-        scoreScreenHome.textContent = home;
-    } else if(teamPoints === 'teamOpp' && opponent > 0){
-        opponent -= 5;
-        scoreScreenOpp.textContent = opponent;
-    }
+const minusButton = (Points) => {
+    Points === 'teamTeam' && team > 0 ? 
+    scoreScreenTeam.textContent = team -= 6 : 
+    Points === 'teamOpp' && opponent > 0 ? 
+    scoreScreenOpp.textContent = opponent -= 6 :
+    0;
 };
+                const plusOneButton = (Points) => {
+                    Points === 'plusOneTeam' ? scoreScreenTeam.textContent = team += 1 : Points === 'plusOneOpp' ? scoreScreenOpp.textContent = opponent += 1 : 0;
+                };
+                const plusTwoButton = (Points) => {
+                    Points === 'plusTwoTeam' ? scoreScreenTeam.textContent = team += 2 : Points === 'plusTwoOpp' ? scoreScreenOpp.textContent = opponent += 2 : 0;
+                };
+                const plusThreeButton = (Points) => {
+                    Points === 'plusThreeTeam' ? scoreScreenTeam.textContent = team += 3 : Points === 'plusThreeOpp' ? scoreScreenOpp.textContent = opponent += 3 : 0;
+                };
+
 
 let resetBtn = () => {
-    home = 0;
+    team = 0;
     opponent = 0;
-    scoreScreenHome.textContent = home;
+    scoreScreenTeam.textContent = team;
     scoreScreenOpp.textContent = opponent;
-}
-
+};
 
 //media queries section
 function updatedTeamNames(){
@@ -41,7 +46,7 @@ function updatedTeamNames(){
     const mediaQuery = window.matchMedia(`(max-width: 878px)`);
     
     mediaQuery.matches ? oppSideName.textContent = "Opp" : oppSideName.textContent = "Opponent";
-}
+};
 
 updatedTeamNames();
 window.addEventListener("resize", updatedTeamNames);
