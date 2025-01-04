@@ -15,7 +15,7 @@ let plusButton = (teamPoints) => {
     }
 };
 
-let minusButton = (teamPoints) => {
+const minusButton = (teamPoints) => {
     if(teamPoints === 'teamHome' && home > 0){
         home -= 5;
         scoreScreenHome.textContent = home;
