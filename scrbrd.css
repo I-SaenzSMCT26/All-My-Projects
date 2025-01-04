@@ -1,0 +1,90 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0; margin: 0;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(white, gray);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 30px;
+
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px; padding: 50px;
+    border-radius: 20px;
+}
+        .team-container{
+            text-align: center; align-content: center;
+            padding: 10px;
+            height: 300px;
+            background-color: grey;
+            border-radius: 40px;
+        }
+                h2{
+                    color: white;
+                    font-size: 3rem;
+                    margin-bottom: 30px;
+                }
+                
+                    .score{
+                        padding: 10px;
+                        background-color: black;
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+                        width: 60%; height: 50%;
+                        border-radius: 10px;
+                        margin-left: auto; margin-right: auto;
+                    }
+                        #home, #opponent{
+                            font-family: digital-7;
+                            border-top-left-radius: 5px; border-top-right-radius: 5px;
+                            font-size: 3rem;
+                            background-color: #c2c2c2; color: white;
+                            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+                            margin-bottom: 30px;
+                        }
+                        .score button{
+                            cursor: pointer;
+                            text-align: center; align-content: center;
+                            font-size: 1.5rem; font-weight: bolder;
+                            background-color: #428d90;
+                            width: 60px; height: 40px;
+                            border: none; border-radius: 3px;
+
+                            transition: .2s;
+                        }
+                         .score button:hover{
+                            background-color: white; color: #428d90;
+                         }
+
+        .reset-container{
+            margin-top: auto; margin-bottom: auto;
+            height: 60px;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center; align-content: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+                #resetBtn{
+                    cursor: pointer;
+                    font-weight: bold;
+                    color: white;
+                    background-color: purple;
+                    width: 80%; height: 40px;
+                    border: none; border-radius: 4px;
+                    text-align: center; align-content: center;
+                    transition: .2s;
+                }
+                    #resetBtn:hover{
+                        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                    }
+                    #resetBtn:active{
+                        background-color: white; color: purple;
+                    }

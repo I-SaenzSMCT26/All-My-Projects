@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>header</title>
+        <link rel="stylesheet" href="scrbrd.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="team-container">
+                <h2>Home</h2>
+                <div class="score">
+                    <div id="home">0</div>
+                    <button onclick="plusButton('teamHome')">+</button>
+                    <button onclick="minusButton('teamHome')">-</button>
+                </div>
+            </div>
+            <div class="reset-container">
+                <button ondblclick="resetBtn()" id="resetBtn">Reset</button>
+            </div>
+            <div class="team-container">
+                <h2>Opponent</h2>
+                <div class="score">
+                    <div id="opponent">0</div>
+                    <button onclick="plusButton('teamOpp')">+</button>
+                    <button onclick="minusButton('teamOpp')">-</button>
+                </div>
+            </div>
+        </div>
+        <script src="scoreboard.js"></script>
+    </body>
+</html>
