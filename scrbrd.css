@@ -17,8 +17,17 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 700px; padding: 50px;
+    width: clamp(40%, 50vw, 6%); padding: 50px;
     border-radius: 20px;
+}
+@media (max-width: 1678px){
+    .container{
+        display: flex; justify-content: space-evenly; align-items: center;
+        flex-direction: column;
+    }
+    .team-container{
+        width: clamp(200px, 50vw, 60%);
+    }
 }
         .team-container{
             text-align: center; align-content: center;
@@ -63,6 +72,12 @@ body{
                             background-color: white; color: #428d90;
                          }
 
+                         @media (max-width: 878px){
+                            .score button{
+                                width: clamp(40px, 4vw, 60px);
+                            }
+                         }
+
         .reset-container{
             margin-top: auto; margin-bottom: auto;
             height: 60px;
@@ -70,6 +85,12 @@ body{
             border-radius: 8px;
             text-align: center; align-content: center;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 1678px){
+            .reset-container{
+                width: 150px;
+            }
         }
 
                 #resetBtn{
