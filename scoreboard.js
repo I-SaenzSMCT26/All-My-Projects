@@ -5,7 +5,7 @@ let scoreHome = document.getElementById('home');
 let scoreOpp = document.getElementById('opponent');
 
 
-let plusButton = (teamPoints) => {
+const plusButton = (teamPoints) => {
     if (teamPoints === 'teamHome'){
         home += 5;
         scoreHome.textContent = home;
@@ -15,7 +15,7 @@ let plusButton = (teamPoints) => {
     }
 };
 
-let minusButton = (teamPoints) => {
+const minusButton = (teamPoints) => {
     if(teamPoints === 'teamHome' && home > 0){
         home -= 5;
         scoreHome.textContent = home;
