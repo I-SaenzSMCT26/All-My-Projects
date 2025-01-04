@@ -8,23 +8,32 @@
     <body>
         <div class="container">
             <div class="team-container">
-                <h2>Team</h2>
+                <h2 id="teamName">Team</h2>
                 <div class="score">
                     <div id="home">0</div>
                     <button onclick="plusButton('teamHome')">+</button>
                     <button onclick="minusButton('teamHome')">-</button>
+                    <div class="secondaryBtnsContainer">
+                        <button class="scnd-btns" onclick="plusOneButton('plusOne')">+1</button>
+                        <button class="scnd-btns" onclick="plusTwoButton('plusTwo')">+2</button>
+                        <button class="scnd-btns" onclick="plusThreeButton('plusThree')">+3</button>
+                    </div>
                 </div>
             </div>
             <div class="reset-container">
-                <button onclick="resetBtn()" id="resetBtn">Reset</button>
+                <button ondblclick="resetBtn()" id="resetBtn">Reset</button>
             </div>
             <div class="team-container">
-                <h2>Opponent</h2>
+                <h2 id="opponentName">Opponent</h2>
                 <div class="score">
                     <div id="opponent">0</div>
                     <button onclick="plusButton('teamOpp')">+</button>
                     <button onclick="minusButton('teamOpp')">-</button>
-                    
+                    <div class="secondaryBtnsContainer">
+                        <button class="scnd-btns" onclick="plusOneButton('plusOne')">+1</button>
+                        <button class="scnd-btns" onclick="plusTwoButton('plusTwo')">+2</button>
+                        <button class="scnd-btns" onclick="plusThreeButton('plusThree')">+3</button>
+                    </div>
                 </div>
             </div>
         </div>
