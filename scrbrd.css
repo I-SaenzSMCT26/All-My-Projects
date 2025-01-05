@@ -3,19 +3,20 @@
     padding: 0; margin: 0;
 }
 body{
-    height: 2000px;
-    background-image: linear-gradient(white, gray);
+    height: 100vh;
+    background-image: linear-gradient(to right, transparent 10%, white 60%), url(pictures/cowboys-photo.jpg);
     background-repeat: no-repeat;
 }
 
 .container{
+    z-index: 2;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     gap: 20px;
 
-    background-color: rgb(61, 61, 61);
+    background-color: #869397;
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: clamp(40%, 50vw, 6%); padding: 50px;
@@ -26,11 +27,12 @@ body{
             text-align: center; align-content: center;
             padding: 10px;
             height: 300px;
-            background-color: grey;
+            background-color: #041E42;
             border-radius: 40px;
         }
 
                 h2{
+                    font-family: Cowboys;
                     color: white;
                     font-size: 3rem;
                     margin-bottom: 30px;
@@ -38,7 +40,7 @@ body{
                 
                     .score{
                         padding: 10px;
-                        background-color: black;
+                        background-color: white;
                         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
                         width: 60%; height: 50%;
                         border-radius: 10px;
@@ -48,16 +50,16 @@ body{
                             font-family: digital-7;
                             border-top-left-radius: 5px; border-top-right-radius: 5px;
                             font-size: 3rem;
-                            background-color: #c2c2c2; color: white;
+                            background-color: #949494; color: white;
                             box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
                             margin-bottom: 30px;
                         }
                         .score > button{
                             cursor: pointer;
                             text-align: center; align-content: center;
-                            font-size: 1.5rem; font-weight: bolder;
-                            background-color: #428d90;
-                            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+                            font-size: 2rem; font-weight: bolder;
+                            background-color: #7F9695; color: white;
+                            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5), 2px 5px 10px rgba(0, 0, 0, 0.7);
                             width: 60px; height: 40px;
                             border: none; border-radius: 3px;
                             font-family: digital-7;
@@ -82,8 +84,8 @@ body{
                                     font-family: digital-7; font-weight: 500;
                                     font-size: 1.5rem;
                                     border: none;
-                                    background-color: white; color: #428d90;
-                                    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.7);
+                                    background-color: white; color: #7F9695;
+                                    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.7), 1px 3px 5px rgba(0, 0, 0, 0.7);
                                     border-radius: 3px;
 
                                     transition: 0.2;
@@ -106,7 +108,7 @@ body{
                     cursor: pointer;
                     font-weight: bold;
                     color: white;
-                    background-color: orangered;
+                    background-color: #003594;
                     width: 80%; height: 40px;
                     border: none; border-radius: 4px;
                     text-align: center; align-content: center;
@@ -116,7 +118,7 @@ body{
                         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
                     }
                     #resetBtn:active{
-                        background-color: white; color: orangered;
+                        background-color: white; color: #003594;
                     }
 
 
