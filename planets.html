@@ -28,30 +28,30 @@
           grid-area: 1/1;
           z-index: 3;
           align-self: center;
-          width: 500px; height: 500px;
+          width: 180px; height: 180px;
           background-image: radial-gradient(at right,#ffeabb 40%, #ffee00);
           border-radius: 50%;
           box-shadow: 0px 0px 40px gold, inset 0px 0px 40px gold;
 
-          animation: sun 30s linear infinite;
+          animation: sun 5s linear infinite;
         }
 
         @keyframes sun{
           0%{
-          box-shadow: 0px 0px 400px gold, inset 0px 0px 40px gold;
+          box-shadow: 0px 0px 130px gold, inset 0px 0px 40px gold;
           }
           50%{
-          box-shadow: 0px 0px 800px 300px #ff9900, inset 0px 0px 300px #ff6200;
+          box-shadow: 0px 0px 150px 160px #ff9900, inset 0px 0px 60px #ff6200;
           }
           100%{
-          box-shadow: 0px 0px 400px gold, inset 0px 0px 40px gold;
+          box-shadow: 0px 0px 130px gold, inset 0px 0px 40px gold;
           }
         }
 
         .mars-container{
           grid-area: 1/1;
           border-radius: 50%;
-          width: 2600px; height: 2500px;
+          width: 800px; height: 870px;
           animation: line1 234s linear infinite;
         }
         
@@ -68,7 +68,7 @@
         .earth-container{
           grid-area: 1/1;
           border-radius: 50%;
-          width: 2100px; height: 2100px;
+          width: 680px; height: 680px;
           animation: line3 124s linear infinite;
         }
         
@@ -85,7 +85,7 @@
         .venus-container{
           grid-area: 1/1;
           border-radius: 50%;
-          width: 1600px; height: 1600px;
+          width: 500px; height: 500px;
           animation: line2 77s linear infinite;
         }
         
@@ -102,7 +102,7 @@
         .mercury-container{
           grid-area: 1/1;
           border-radius: 50%;
-          width: 1200px; height: 1200px;
+          width: 300px; height: 300px;
           animation: line1 30s linear infinite;
         }
         
@@ -120,7 +120,7 @@
 
               .mercury{
                 z-index: 2;
-                width: 40px; height: 40px;
+                width: 10px; height: 10px;
 
                 background-image: radial-gradient(at right,rgba(255, 0, 195, .7), rgb(123, 123, 251) 30%, #ffc278 99%);
                 border-radius: 100px;
@@ -144,7 +144,7 @@
               
               .venus{
                 z-index: 2;
-                width: 50px; height: 50px;
+                width: 24.8px; height: 24.8px;
 
                 background-image: radial-gradient(#ffbf49, #ff920c); box-shadow: 0px 0px 30px goldenrod;
                 border-radius: 100px;
@@ -168,7 +168,7 @@
 
               .earth{
                 z-index: 2;
-                width: 75px; height: 75px;
+                width: 26.1px; height: 26.1px;
 
                 background-image: radial-gradient(at right, rgb(60, 121, 60), transparent 40%), radial-gradient(white 20%, #447fff 60%); box-shadow: 0px 0px 30px blue;
                 border-radius: 100px;
@@ -192,7 +192,7 @@
 
               .mars{
                 z-index: 2;
-                width: 80px; height: 80px;
+                width: 13.9px; height: 13.9px;
 
                 background-image: radial-gradient(#ff4400, #ff3700); box-shadow: 0px 0px 30px #aa2f02;
                 border-radius: 100px;
@@ -223,6 +223,26 @@
 
                 transform: scale(2);
                 transform-origin: top=left;
+              }
+
+
+              @media (max-width: 650px){
+                .sun{
+                  width: 100px; height: 100px;
+                }
+
+                .mercury-container{
+                  width: 150px; height: 150px;
+                }
+                .venus-container{
+                  width: 220px; height: 220px;
+                }
+                .earth-container{
+                  width: 290px; height: 290px;
+                }
+                .mars-container{
+                  width: 340px; height: 340px;
+                }
               }
     </style>
   </head>
