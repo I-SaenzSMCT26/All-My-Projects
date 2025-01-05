@@ -11,11 +11,11 @@
 */
 @font-face {
     font-family: 'Cowboys';
-    src: url(fonts/Cowboys.ttf);
+    src: url(Cowboys.ttf);
 }
 body{
     height: 100vh;
-    background-image: linear-gradient(to right, transparent 10%, white 60%), url(pictures/cowboys-photo.jpg);
+    background-image: linear-gradient(to right, transparent 10%, white 60%), url(cowboys-photo.jpg);
     background-repeat: no-repeat;
 }
 
