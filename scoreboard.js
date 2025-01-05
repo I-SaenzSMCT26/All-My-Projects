@@ -29,7 +29,6 @@ const minusButton = (Points) => {
                     Points === 'plusThreeTeam' ? scoreScreenTeam.textContent = team += 3 : Points === 'plusThreeOpp' ? scoreScreenOpp.textContent = opponent += 3 : 0;
                 };
 
-
 let resetBtn = () => {
     team = 0;
     opponent = 0;

@@ -2,6 +2,17 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 0; margin: 0;
 }
+/* Cowboys color codes:
+#003594 - royal blue
+#041E42 - blue
+#869397 - silver
+#7F9695 - silver green
+#FFFFFF - it's just white 😂
+*/
+@font-face {
+    font-family: 'Cowboys';
+    src: url(fonts/Cowboys.ttf);
+}
 body{
     height: 100vh;
     background-image: linear-gradient(to right, transparent 10%, white 60%), url(pictures/cowboys-photo.jpg);
@@ -20,7 +31,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     width: clamp(40%, 50vw, 6%); padding: 50px;
-    border-radius: 60px;
+    border-radius: 60px; border: solid black 10px;
 }
 
         .team-container{
@@ -28,13 +39,14 @@ body{
             padding: 10px;
             height: 300px;
             background-color: #041E42;
-            border-radius: 40px;
+            border-radius: 40px; border: solid white 4px; 
         }
 
                 h2{
-                    font-family: Cowboys;
+                    font-family: 'Cowboys';
+                    font-weight: 200;
                     color: white;
-                    font-size: 3rem;
+                    font-size: 2rem;
                     margin-bottom: 30px;
                 }
                 
@@ -50,9 +62,10 @@ body{
                             font-family: digital-7;
                             border-top-left-radius: 5px; border-top-right-radius: 5px;
                             font-size: 3rem;
-                            background-color: #949494; color: white;
+                            background-color: #949494; color: rgb(106, 107, 107);
                             box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
                             margin-bottom: 30px;
+                            border: solid black 4px;
                         }
                         .score > button{
                             cursor: pointer;
@@ -67,7 +80,7 @@ body{
                             transition: .2s;
                         }
                          .score > button:hover{
-                            background-color: white; color: orangered;
+                            background-color: white; color: #003594;
                          }
                          
                          .secondaryBtnsContainer{
@@ -91,7 +104,7 @@ body{
                                     transition: 0.2;
                                 }
                                     .scnd-btns:hover{
-                                        color: orangered;
+                                        color: #003594;
                                         opacity: 90%;
                                     }
 
@@ -105,12 +118,13 @@ body{
             text-align: center; align-content: center;
         }
                 #resetBtn{
+                    font-family: 'Cowboys';
                     cursor: pointer;
-                    font-weight: bold;
                     color: white;
                     background-color: #003594;
+                    border: solid white 3px;
                     width: 80%; height: 40px;
-                    border: none; border-radius: 4px;
+                    border-radius: 4px;
                     text-align: center; align-content: center;
                     transition: .2s;
                 }
@@ -130,7 +144,6 @@ body{
 @media (max-width: 1678px){
     .container{
         display: flex; justify-content: space-evenly; align-items: center;
-        flex-direction: column;
     }
     .team-container{
         width: clamp(250px, 50vw, 60%);
@@ -158,7 +171,7 @@ body{
         height: 25px;
     }
         #resetBtn{
-            background-color: orangered; color: white;
+            background-color: #003594; color: white;
             height: 20px;
         }
 
