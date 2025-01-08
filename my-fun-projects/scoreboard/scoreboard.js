@@ -15,19 +15,14 @@ const teamOpp = ('teamOpp');
 // const plusThreeOpp = ('plusThreeOpp');
 
 let plusButton = (Points) => {
-    teamTeam === Points ? 
-    scoreScreenTeam.textContent = team += 6 : 
-    teamOpp === Points ? 
-    scoreScreenOpp.textContent = opponent += 6 :
-    0;
+    teamTeam === Points ? scoreScreenTeam.textContent = team += 6 : teamOpp === Points ? scoreScreenOpp.textContent = opponent += 6 : 0;
 };
 
 const minusButton = (Points) => {
-    Points === 'teamTeam' && team > 5 ? 
-    scoreScreenTeam.textContent = team -= 6 : 
-    Points === 'teamOpp' && opponent > 5 ? 
-    scoreScreenOpp.textContent = opponent -= 6 : 0;
+    teamTeam === Points && team > 5 ? scoreScreenTeam.textContent = team -= 6 : teamOpp === Points && opponent > 5 ? scoreScreenOpp.textContent = opponent -= 6 : 0;
 };
+
+// Below is the code for the secondary buttons for adding points
                 const plusOneButton = (Points) => {
                     Points === 'plusOneTeam' ? scoreScreenTeam.textContent = team += 1 : Points === 'plusOneOpp' ? scoreScreenOpp.textContent = opponent += 1 : 0;
                 };
