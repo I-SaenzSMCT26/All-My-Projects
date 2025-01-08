@@ -4,11 +4,20 @@ let scoreScreenOpp = document.getElementById('opponent');
 
 let team = 0;
 let opponent = 0;
+const teamTeam = ('teamTeam');
+// const plusOneTeam = ('plusOneTeam');
+// const plusTwoTeam = ('plusTwoButton');
+// const plusThreeTeam = ('plusThreeButton');
+
+const teamOpp = ('teamOpp');
+// const plusOneOpp = ('plusOneOpp');
+// const plusTwoOpp = ('plusTwoOpp');
+// const plusThreeOpp = ('plusThreeOpp');
 
 let plusButton = (Points) => {
-    Points === 'teamTeam' ? 
+    teamTeam === Points ? 
     scoreScreenTeam.textContent = team += 6 : 
-    Points === 'teamOpp' ? 
+    teamOpp === Points ? 
     scoreScreenOpp.textContent = opponent += 6 :
     0;
 };
@@ -28,6 +37,16 @@ const minusButton = (Points) => {
                 const plusThreeButton = (Points) => {
                     Points === 'plusThreeTeam' ? scoreScreenTeam.textContent = team += 3 : Points === 'plusThreeOpp' ? scoreScreenOpp.textContent = opponent += 3 : 0;
                 };
+
+                // const plusOneButton = (Points) => {
+                //     plusOneTeam === Points ? scoreScreenTeam.textContent = team += 1 : plusOneOpp === Points ? PointsscoreScreenOpp.textContent = opponent += 1 : 0;
+                // };
+                // const plusTwoButton = (Points) => {
+                //     plusTwoTeam === Points ? scoreScreenTeam.textContent = team += 2 : plusTwoOpp === Points ? PointsscoreScreenOpp.textContent = opponent += 2 : 0;
+                // };
+                // const plusThreeButton = (Points) => {
+                //     plusThreeTeam === Points ? scoreScreenTeam.textContent = team += 3 : plusThreeOpp === Points ? scoreScreenOpp.textContent = opponent += 3 : 0;
+                // };
 
 let resetBtn = () => {
     team = 0;
