@@ -44,10 +44,8 @@ const minusButton = (Points) => {
                 // };
 
 let resetBtn = () => {
-    team = 0;
-    opponent = 0;
-    scoreScreenTeam.textContent = team;
-    scoreScreenOpp.textContent = opponent;
+    scoreScreenTeam.textContent = team = 0;
+    scoreScreenOpp.textContent = opponent = 0;
 };
 
 //media queries section
