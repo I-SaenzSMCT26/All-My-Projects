@@ -41,8 +41,8 @@ else if (guess !== secretNumber) {
       `Too high, try again...` : `Too low, try again...`
 
       score <= 50 ? score -= 1 : 
-score <= 40 ? score -= 2 : 
-score <= 20 ? score -= 5 : 0;
+      score <= 40 ? score -= 2 : 
+      score <= 20 ? score -= 5 : 0;
 
       wrongNumber.play();
       
