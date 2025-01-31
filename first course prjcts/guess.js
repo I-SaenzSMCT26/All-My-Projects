@@ -25,8 +25,10 @@ document.querySelector('.check').addEventListener('click', function() {
     } 
   
 else if (guess !== secretNumber) {
+
     
-  if (score > 5) {
+  if (score !== 0) {
+
     //THIS IS WHAT i GOT
     // if(guess < secretNumber){
     //   document.querySelector('.message').textContent = `Too low, try again...`
@@ -38,7 +40,10 @@ else if (guess !== secretNumber) {
       document.querySelector('.message').textContent = guess > secretNumber ? 
       `Too high, try again...` : `Too low, try again...`
 
-      score -= 5
+      score <= 50 ? score -= 1 : 
+score <= 40 ? score -= 2 : 
+score <= 20 ? score -= 5 : 0;
+
       wrongNumber.play();
       
       document.querySelector('.score').textContent = score;
