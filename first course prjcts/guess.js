@@ -34,7 +34,7 @@ else if (guess !== secretNumber) {
     //   document.querySelector('.message').textContent = `Too high, try again...`;
     // }
 
-    //THIS IS THE SOLUTION JONAS MY MENTOR SHOWED
+    //THIS IS THE SOLUTION JONAS THE INSTRUCTOR SHOWED
       document.querySelector('.message').textContent = guess > secretNumber ? 
       `Too high, try again...` : `Too low, try again...`
 
