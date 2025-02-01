@@ -14,7 +14,7 @@ html {
 body {
   font-family: 'Press Start 2P', sans-serif;
   color: #eee;
-  background-color: #222;
+  background-color: #a2a2a2;
   /* background-color: #60b347; */
 }
 
@@ -84,7 +84,7 @@ h1 {
 
 .guess {
   background: none;
-  border: 4px solid #eee;
+  border: 4px solid #eee; border-radius: 20px;
   font-family: inherit;
   color: inherit;
   font-size: 5rem;
