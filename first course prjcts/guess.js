@@ -9,10 +9,16 @@ let youWin = new Audio();
 youWin.src = 'sound effects/you-win.mp3';
 let youLose = new Audio();
 youLose.src = 'sound effects/you-lose.mp3';
-let wrongNumber = new Audio();
-wrongNumber.src = 'sound effects/wrong-number.mp3'
 let againButton = new Audio();
-againButton.src = 'sound effects/again.mp3'
+againButton.src = 'sound effects/again.mp3';
+
+
+let wrongNumber1 = new Audio();
+wrongNumber1.src = 'wrong number sounds/wrong-number-1.mp3';
+let wrongNumber2 = new Audio();
+wrongNumber2.src = 'wrong number sounds/wrong-number-2.mp3';
+let wrongNumber3 = new Audio();
+wrongNumber3.src = 'wrong number sounds/wrong-number-3.mp3'
 
 let playOnceOnly = false
 
@@ -26,25 +32,21 @@ document.querySelector('.check').addEventListener('click', function() {
   
 else if (guess !== secretNumber) {
 
-    
-  if (score !== 0) {
+  score <= 50 && score > 40 ?     
+  (score -= 2, wrongNumber1.play()): 
+  score <= 40 && score > 20 ? 
+  (score -= 5, wrongNumber2.play()) : 
+  score <= 20 && score > 10 ? 
+  (score -= 10, wrongNumber3.play()) : 
+  score <= 10 ? score -= 10 : null;
 
-    //THIS IS WHAT i GOT
-    // if(guess < secretNumber){
-    //   document.querySelector('.message').textContent = `Too low, try again...`
-    // } else if (guess > secretNumber){
-    //   document.querySelector('.message').textContent = `Too high, try again...`;
-    // }
+  if (score !== 0 && score > 5) {
 
-    //THIS IS THE SOLUTION JONAS THE INSTRUCTOR SHOWED
       document.querySelector('.message').textContent = guess > secretNumber ? 
       `Too high, try again...` : `Too low, try again...`
 
-      score <= 50 ? score -= 1 : 
-      score <= 40 ? score -= 2 : 
-      score <= 20 ? score -= 5 : 0;
+     
 
-      wrongNumber.play();
       
       document.querySelector('.score').textContent = score;
   } else {
@@ -62,26 +64,6 @@ else if (guess !== secretNumber) {
   }
 }
   
-
-  /* THIS IS COMMENTED OUT BECAUSE SIMPLIFIED THE CODE AND MADE IT MORE COMPACT */
-  
-  // else if (guess < secretNumber) {
-  //     if (score > 2) {
-  //         wrongNumber.play();
-  //         document.querySelector('.message').textContent = `Too low, try again`;
-  //         score -= 2;
-  //         document.querySelector('.score').textContent = score;
-  //     } else {
-  //         if(!playOnceOnly){
-  //           youLose.play();
-  //           playOnceOnly = true;
-  //         }
-  //         document.querySelector('.message').textContent = `Sorry you lose. :(`;
-  //         document.querySelector('.score').textContent = 0;
-
-  //         document.querySelector('body').style.backgroundColor = '#e70808';
-  //     }
-  // }
   
                         
     else if(guess === secretNumber) {
@@ -96,9 +78,11 @@ else if (guess !== secretNumber) {
       document.querySelector('body').style.backgroundColor = '#5ac8f3';
       document.querySelector('.number').style.width = '30rem';
 
-    
-        document.querySelector('.highscore').textContent = highScore+=120;
-    
+        if(guess === secretNumber){
+          document.querySelector('.highscore').textContent = highScore+=120;
+        } else {
+          document.querySelector('.highscore').textContent = null;
+        }        
     }
                     
     
