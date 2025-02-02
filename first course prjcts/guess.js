@@ -4,6 +4,10 @@ let secretNumber = Math.trunc(Math.random() * 50) + 1;
 
 let score = 50;
 let highScore = 0;
+let points = 0;
+
+let playOnceOnly = false;
+let addPointsOnce = false;
 
 let youWin = new Audio();
 youWin.src = "sound effects/you-win.mp3";
@@ -19,12 +23,25 @@ wrongNumber2.src = "wrong number sounds/wrong-number-2.mp3";
 let wrongNumber3 = new Audio();
 wrongNumber3.src = "wrong number sounds/wrong-number-3.mp3";
 
-let playOnceOnly = false;
-let addPointsOnce = false;
+document.querySelector(".plus").addEventListener("click", function () {
+  document.querySelector(".message").textContent !== "Nice, you guessed it!!" &&
+  document.querySelector(".message").textContent !== "Sorry you lose. :(..."
+    ? points <= 49
+      ? (points++, (document.querySelector(".guess").value = points))
+      : null
+    : null;
+});
+document.querySelector(".minus").addEventListener("click", function () {
+  document.querySelector(".message").textContent !== "Nice, you guessed it!!" &&
+  document.querySelector(".message").textContent !== "Sorry you lose. :(..."
+    ? points > 1
+      ? (points--, (document.querySelector(".guess").value = points))
+      : null
+    : null;
+});
 
 document.querySelector(".check").addEventListener("click", function () {
-  const guess = Number(document.querySelector(".guess").value);
-  console.log(guess, typeof guess);
+  let guess = Number(document.querySelector(".guess").value);
 
   if (!guess) {
     document.querySelector(".message").textContent = "No Number!";
@@ -86,6 +103,7 @@ document.querySelector("#again").addEventListener("click", function () {
 
   secretNumber = Math.trunc(Math.random() * 50) + 1;
   score = 50;
+  points = 0;
 
   document.querySelector(".score").textContent = score;
   document.querySelector(".guess").value = "";
@@ -94,5 +112,5 @@ document.querySelector("#again").addEventListener("click", function () {
   document.querySelector(".number").textContent = "?";
   document.querySelector(".number").style.width = "15rem";
 
-  document.querySelector("body").style.backgroundColor = "#222";
+  document.querySelector("body").style.backgroundColor = "#a2a2a2";
 });
