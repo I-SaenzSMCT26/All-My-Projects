@@ -34,7 +34,7 @@ main {
 }
 
 .left {
-  gap: 20px;
+  gap: 40px;
   width: 52rem;
   display: flex;
   flex-direction: column;
@@ -92,7 +92,7 @@ h1 {
   padding: 2.5rem;
   width: 25rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .btn {
@@ -101,7 +101,7 @@ h1 {
   color: #222;
   font-size: 2rem;
   font-family: inherit;
-  padding: 2rem 3rem;
+  padding: 3rem 9.4rem;
   cursor: pointer;
 }
 
@@ -127,7 +127,7 @@ h1 {
 .btnContainer {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 5%;
   width: auto;
 }
 .minus,
@@ -135,6 +135,6 @@ h1 {
   font-family: "Press Start 2P", sans-serif;
   font-size: 2.5rem;
   border: none;
-  width: 50px;
-  height: 50px;
+  width: 47.5%;
+  height: 70px;
 }
