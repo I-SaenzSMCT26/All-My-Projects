@@ -16,6 +16,11 @@ youLose.src = "sound effects/you-lose.mp3";
 let againButton = new Audio();
 againButton.src = "sound effects/again.mp3";
 
+let plusSound = new Audio();
+plusSound.src = "sound effects/plusbtn.mp3";
+let minusSound = new Audio();
+minusSound.src = "sound effects/minusbtn.mp3";
+
 let wrongNumber1 = new Audio();
 wrongNumber1.src = "wrong number sounds/wrong-number-1.mp3";
 let wrongNumber2 = new Audio();
@@ -27,7 +32,9 @@ document.querySelector(".plus").addEventListener("click", function () {
   document.querySelector(".message").textContent !== "Nice, you guessed it!!" &&
   document.querySelector(".message").textContent !== "Sorry you lose. :(..."
     ? points <= 49
-      ? (points++, (document.querySelector(".guess").value = points))
+      ? (points++,
+        (document.querySelector(".guess").value = points),
+        plusSound.play())
       : null
     : null;
 });
@@ -35,7 +42,9 @@ document.querySelector(".minus").addEventListener("click", function () {
   document.querySelector(".message").textContent !== "Nice, you guessed it!!" &&
   document.querySelector(".message").textContent !== "Sorry you lose. :(..."
     ? points > 1
-      ? (points--, (document.querySelector(".guess").value = points))
+      ? (points--,
+        (document.querySelector(".guess").value = points),
+        minusSound.play())
       : null
     : null;
 });
