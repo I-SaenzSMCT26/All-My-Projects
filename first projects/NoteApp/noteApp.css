@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* border: solid black 2px; */
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #595d6c;
+}
+
+img {
+  width: 300px;
+  margin-bottom: 30px;
+}
+
+.topCont {
+  height: 55%;
+  align-content: end;
+  justify-items: center;
+}
+.noteBar {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b9c7c7;
+  border: solid #2f4c6c 4px;
+  border-radius: 50px;
+  align-content: center;
+  width: 600px;
+  height: 80px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.makeNote {
+  background: none;
+  border: none;
+  width: 50%;
+  height: 75%;
+  outline: none;
+  margin-left: 20px;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  align-content: center;
+}
+.makeNote::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.iconCont {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80px;
+  margin-right: 20px;
+}
+.barBtns {
+  text-align: center;
+  align-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #2f4c6c;
+  color: #b9c7c7;
+  font-size: 1rem;
+  font-weight: bolder;
+  border: none;
+  border-radius: 10px;
+}
+.barBtns:hover {
+  opacity: 80%;
+}
+.barBtns:active {
+  opacity: 100%;
+  color: white;
+  border-radius: 50px;
+}
+.bottomCont {
+  align-content: center;
+  justify-items: center;
+  height: 44%;
+  width: 604px;
+}
+.note {
+  padding: 20px;
+  border-radius: 30px;
+  border: #2f4c6c solid 4px;
+  background-color: #b9c7c7;
+  width: 600px;
+  height: 300px;
+}
+.title {
+  font-size: 1.4rem;
+}
+hr {
+  height: 2px;
+  border: none;
+  background-color: #2f4c6c;
+  margin: 10px 0px;
+}
+.noteContent,
+.noteContent * {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12pt;
+  font-weight: bold;
+  width: 100%;
+  height: 75%;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  color: #2f4c6c;
+}
