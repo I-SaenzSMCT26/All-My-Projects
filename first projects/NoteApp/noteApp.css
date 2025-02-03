@@ -64,6 +64,8 @@ img {
   margin-right: 20px;
 }
 .icon {
+  text-align: center;
+  align-items: center;
   width: 15px;
   margin: 0;
 }
