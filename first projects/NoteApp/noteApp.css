@@ -123,3 +123,42 @@ hr {
   outline: none;
   color: #428d90;
 }
+
+.delContBtn {
+  display: flex;
+  justify-self: end;
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: rgba(0,0,0,0);
+  background-color: #428d90;
+  border-top-left-radius: 100%;
+  transition: 0.35s ease-in-out;
+}
+
+.delContBtn:hover {
+  color: rgba(0,0,0,0);
+  animation: delContBtnHover 0.3s ease-in-out forwards;
+}
+
+.delContBtn:not(:hover) {
+  animation: delContBtnReverse 0.3s ease-in-out forwards;
+}
+
+@keyframes delContBtnHover {
+  0%{
+    border-top-left-radius: 100%;
+  }
+  100%{
+    border-top-left-radius: 0%;
+  }
+}
+        
+@keyframes delContBtnReverse {
+  0%{
+    border-top-left-radius: 0%;
+  }
+  100%{
+    border-top-left-radius: 100%;
+  }
+}
