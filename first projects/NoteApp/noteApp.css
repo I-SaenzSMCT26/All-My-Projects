@@ -125,27 +125,3 @@ hr {
   outline: none;
   color: #428d90;
 }
-
-.delContBtn {
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(66, 141, 144, 0) 50%,
-    rgba(66, 141, 144, 1) 50%
-  );
-  display: flex;
-  justify-self: end;
-  width: 25px;
-  height: 25px;
-  border: none;
-  border-radius: 4px;
-  transform: translateX(65%);
-  background-color: transparent;
-}
-
-.delContBtn:hover {
-  animation: delContBtnHover 0.6s ease-in-out forwards;
-}
-
-.delContBtn:not(:hover) {
-  animation: delContBtnReverse 0.6s ease-in-out forwards;
-}
