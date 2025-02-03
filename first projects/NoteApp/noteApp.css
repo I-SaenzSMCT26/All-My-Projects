@@ -137,7 +137,7 @@ hr {
 }
 
 .delContBtn:hover {
-  color: rgba(0,0,0,0);
+  color: rgba(0,0,0,1);
   animation: delContBtnHover 0.3s ease-in-out forwards;
 }
 
