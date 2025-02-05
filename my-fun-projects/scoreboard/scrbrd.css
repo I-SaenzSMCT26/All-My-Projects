@@ -59,7 +59,7 @@ body{
                         margin-left: auto; margin-right: auto;
                     }
                         #team, #opponent{
-                            font-family: digital-7;
+                            font-family: 'digital-7';
                             border-top-left-radius: 5px; border-top-right-radius: 5px;
                             font-size: 3rem;
                             background-color: #949494; color: rgb(106, 107, 107);
@@ -75,7 +75,7 @@ body{
                             box-shadow: inset -4px -4px 10px rgba(0, 0, 0, 0.5), 2px 3px 7px rgba(0, 0, 0, 0.7);
                             width: 60px; height: 40px;
                             border: none; border-radius: 3px;
-                            font-family: digital-7;
+                            font-family: 'digital-7';
 
                             transition: .1s;
                         }
