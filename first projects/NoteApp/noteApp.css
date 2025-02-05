@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* border: solid black 2px; */
+  border: solid black 2px;
 }
 
 body {
@@ -21,7 +21,7 @@ img {
 }
 
 .topCont {
-  height: 55%;
+  height: 38%;
   align-content: end;
   justify-items: center;
 }
@@ -69,9 +69,7 @@ img {
   width: 15px;
   margin: 0;
 }
-.bottomCont {
-  font-weight: bolder;
-}
+
 .barBtns {
   display: flex;
   justify-content: center;
@@ -93,10 +91,12 @@ img {
   color: white;
 }
 .bottomCont {
+  display: flex;
+  font-weight: bolder;
   align-content: center;
   justify-items: center;
   height: 44%;
-  width: 604px;
+  width: 80%;
 }
 .note {
   padding: 30px;

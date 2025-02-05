@@ -1,9 +1,9 @@
-let titleInput = document.querySelector('.titleInput');
-let addNote = document.querySelector('#plus');
-let noteTitle =  document.querySelector('.title');
+const titleInput = document.querySelector('.titleInput');
+const addNote = document.querySelector('#plus');
+const noteTitle =  document.querySelector('.title');
 
 addNote.addEventListener('click', () => {
-    noteTitle.textContent = 
-})
+    noteTitle.textContent = titleInput.value;
+});
 
   
