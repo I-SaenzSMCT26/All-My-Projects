@@ -30,7 +30,7 @@ plus.addEventListener("click", () => {
   noteCard.appendChild(noteTitle);
   noteCard.appendChild(hRule);
   noteCard.appendChild(contentOfCard);
-  noteCard.appendChild(closeBtn);
+  noteCard.appendChild(closeBtnContainer);
 
   main.appendChild(noteCard);
 });
