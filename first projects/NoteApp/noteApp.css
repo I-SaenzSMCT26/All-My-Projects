@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family:monospace;
   /* border: solid black 2px; */
 }
 
@@ -12,21 +12,33 @@ body {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  background-color: #b0c6c8;
+  background-color: #2c484a;
 }
 
 img {
+  display: flex;
+  justify-self: flex-start;
   width: 300px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+.hRule{
+  color: #2c484a;
+  height: 4px;
+  width: 90%;
+  opacity: 0.8;
 }
 
 .topCont {
+  display: flex;
+  padding: 20px;
+  margin-top: 35px;
   height: 38%;
-  align-content: end;
-  justify-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-self: flex-start;
 }
 .noteBar {
-  padding: 10px;
+  padding: 13px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +58,7 @@ img {
   height: 75%;
   outline: none;
   margin-left: 20px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bolder;
   align-content: center;
 }
@@ -56,37 +68,23 @@ img {
   font-weight: bolder;
 }
 
-.iconCont {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 80px;
-  margin-right: 20px;
-}
-.icon {
+.addNote {
+  padding: none;
+  align-content: center;
   text-align: center;
-  align-items: center;
-  width: 15px;
-  margin: 0;
-}
-
-.barBtns {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 32px;
   height: 32px;
   background-color: #428d90;
   color: black;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   border: none;
   border-radius: 50px;
 }
-.barBtns:hover {
+.addNote:hover {
   opacity: 80%;
 }
-.barBtns:active {
+.addNote:active {
   opacity: 100%;
   color: white;
 }
@@ -94,14 +92,17 @@ img {
   display: flex;
   font-weight: bolder;
   align-content: center;
+  justify-content: space-evenly;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.5);
+  margin: 10px;
   border-radius: 30px;
-  gap: 25px;
   flex-wrap: wrap;
 }
 .note {
   padding: 30px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
   border-radius: 20px;
   border: #428d90 solid 4px;
   background-color: #b9c7c7;
@@ -110,11 +111,11 @@ img {
 }
 
 .title {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .title::before {
   content: "· ";
-  color: white;
+  color: black;
 }
 hr {
   height: 1px;
@@ -138,31 +139,36 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   transform: translate(50%, 10%);
   justify-self: end;
 }
 .delContBtn {
   display: flex;
   justify-content: center;
-  align-items: centers;
+  align-items: center;
   font-size: 0.8rem;
   font-weight: bolder;
   overflow: hidden;
   width: 20px;
-  background-color: #ffffff;
   border: none;
   border-radius: 3px 3px 3px 3px;
   color: rgba(0, 0, 0, 0);
+  background-color: #686868;
 
   transition: 0.1s ease-in-out;
 }
 
 .delContBtn:hover {
+  background-color: #ffffff;
   overflow: hidden;
   color: #428d90;
   animation: delHover 0.25s ease-in-out forwards;
+}
+.delContBtn:active{
+  background-color: #428d90;
+  color: white;
 }
 .delContBtn:not(:hover) {
   animation: delHoverReverse 0.25s ease-in-out forwards;
