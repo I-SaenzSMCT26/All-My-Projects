@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family:monospace;
+  font-family: monospace;
   /* border: solid black 2px; */
 }
 
@@ -18,13 +18,13 @@ body {
 img {
   display: flex;
   justify-self: flex-start;
-  width: 300px;
+  width: 320px;
   margin-bottom: 15px;
 }
-.hRule{
+.hRule {
   color: #2c484a;
-  height: 4px;
-  width: 90%;
+  height: 2px;
+  width: 98%;
   opacity: 0.8;
 }
 
@@ -89,10 +89,10 @@ img {
   color: white;
 }
 .bottomCont {
+  width: 100%;
   display: flex;
+  align-self: flex-start;
   font-weight: bolder;
-  align-content: center;
-  justify-content: space-evenly;
   padding: 20px;
   margin: 10px;
   border-radius: 30px;
@@ -101,8 +101,8 @@ img {
 .note {
   padding: 30px;
   margin-bottom: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 7px;
+  margin-right: 7px;
   border-radius: 20px;
   border: #428d90 solid 4px;
   background-color: #b9c7c7;
@@ -125,15 +125,14 @@ hr {
 }
 .noteContent,
 .noteContent * {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 12pt;
+  font-size: 10pt;
   font-weight: bold;
   width: 100%;
   height: 75%;
   border: none;
   border-radius: 20px;
   outline: none;
-  color: #428d90;
+  color: gray;
 }
 .closeBtnContainer {
   display: flex;
@@ -166,8 +165,8 @@ hr {
   color: #428d90;
   animation: delHover 0.25s ease-in-out forwards;
 }
-.delContBtn:active{
-  background-color: #428d90;
+.delContBtn:active {
+  background-color: #c33b3b;
   color: white;
 }
 .delContBtn:not(:hover) {
