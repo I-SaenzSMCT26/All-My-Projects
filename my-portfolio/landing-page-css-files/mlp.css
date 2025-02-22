@@ -36,37 +36,10 @@ header{
 /*everything below is all the content inside the header*/
 
     /*THIS IS THE CONTENT OF THE LEFT CONTAINER*/
-    .left-container{
-        display: flex; justify-content: space-evenly; align-items: center; 
-
-        width: 1000px;
-        margin-left: 10px;
-    }
-
-        div[class="left-container"] > *{
-            height: 80px;
-        }
-        #picture-container{
-            display: flex; justify-content: space-evenly; align-items: center;
-        }
-            #profilepic{
-                display: flex;
-                border-radius: 10%;
-                height: 75px;
-                transition: 0.3s;
-                margin-right: 20px;
-            }
-            #profilepic:hover{
-                margin-top: 200px;
-                margin-right: 10px;
-                height: 200px;
-                box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
-            }
-
-        
         #menu-section{
             overflow: hidden;
             display: flex; justify-content: space-evenly;
+            align-items: center;
             width: 700px; height: 100%;
             margin-right: 120px;
         }
@@ -89,19 +62,21 @@ header{
     }
         .hamburger{
             display: none;
-            font-size: 1.8rem;
-            width: 70px;
-            height: 70px;
+            font-size: 2rem;
+            width: 60px;
+            height: 60px;
             align-self: center;
-            margin-right: 30px;
+            margin-left: 25px;
             border: none; border-radius: 8px;
             background-color: #428d90;
 
-            box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.9);
-            transition: .5s;
+            transition: .2s;
         }
             .hamburger:hover{
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            }
+            .hamburger:active{
+                opacity: 70%;
             }
 
         @media (max-width: 870px){
@@ -179,7 +154,7 @@ header{
             }
             #intro-p::before{
                 content: 'Introduction';
-                margin-right: 40px;
+                margin-right: 20px;
                 text-align: center;
                 font-size: 3rem;
                 color: #326f71;
@@ -215,7 +190,7 @@ main{
         width: 20%;
     }
         .middleSpacing{
-            height: 300px; width: 1px;
+            height: 600px;
             background-color: lightslategray;
         }
     @media (max-width: 637px){
