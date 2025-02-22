@@ -214,6 +214,10 @@ main{
         height: 80%;
         width: 20%;
     }
+        .middleSpacing{
+            height: 300px; width: 1px;
+            background-color: lightslategray;
+        }
     @media (max-width: 637px){
         #main3{
             gap: 32px;

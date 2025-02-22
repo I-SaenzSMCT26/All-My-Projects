@@ -35,7 +35,6 @@ img {
   height: 38%;
   justify-content: space-evenly;
   flex-direction: column;
-  align-self: flex-start;
 }
 .noteBar {
   padding: 13px;
