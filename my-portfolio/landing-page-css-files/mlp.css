@@ -233,12 +233,13 @@ main{
 /*THIS IS THE FOOTER SECTION WHICH CONTAINS ALL CONTACT INFORMATION AND SOCIAL MEDIA LINKS*/
 footer{
     display: flex; justify-content: space-between;
-
+    align-items: center;
     padding: 30px;
-    background-color: #224243;
+    background-color: white;
     height: 200px;
 }
-    .cont-info{
+    .cont-info, .cont-info > *{
+        color: black;
         display: flex; justify-content: space-evenly; flex-direction: column;
     }
 
@@ -249,7 +250,7 @@ footer{
             width: 20px; height: 20px;
             margin: 0px 20px;
         }
-            div[class="sc"] > img{
+            div[class="sc"] > a > img{
                 width: 100%;
             }
 
