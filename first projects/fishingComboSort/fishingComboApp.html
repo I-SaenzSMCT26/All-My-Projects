@@ -95,6 +95,14 @@
                         background-color: white;
                         color: blue;
                     }
+                    .dropDown{
+                        position: absolute;
+                        z-index: 2;
+                        width: 75px;
+                        height: 35px;
+                        background-color: white;
+                        visibility: hidden;
+                    }
             @media (width: 1580px){
                 #comboContainer{
                     flex-direction: column;
@@ -109,18 +117,22 @@
             <div class="menuContainer">
                 <input class="leftInputs" type="text" placeholder="Rod">
                 <button>&plus;</button>
+                <div class="dropDown"></div>
             </div>
             <div class="menuContainer">
                 <input class="leftInputs" type="text" placeholder="Reel">
                 <button>&plus;</button>
+                <div class="dropDown"></div>
             </div>
             <div class="menuContainer">
                 <input class="leftInputs" type="text" placeholder="Line">
                 <button>&plus;</button>
+                <div class="dropDown"></div>
             </div>
             <div class="menuContainer">
                 <input class="leftInputs" type="text" placeholder="Lures">
                 <button>&plus;</button>
+                <div class="dropDown"></div>
             </div>
         </div>
         <div class="rightoutputContainer">
