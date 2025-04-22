@@ -24,7 +24,7 @@ plus.addEventListener("click", () => {
 
   let closeBtn = document.createElement(`button`);
   closeBtn.classList.add(`delContBtn`);
-  closeBtn.textContent = `✖`;
+  closeBtn.textContent = `Delete`;
   closeBtn.addEventListener("click", () => {
     noteCard.remove();
   });
