@@ -3,37 +3,36 @@ const plus = document.querySelector("#plus");
 const main = document.querySelector("main");
 
 plus.addEventListener("click", () => {
-  let noteCard = document.createElement(`div`);
-  noteCard.classList.add("note");
+    let noteCard = document.createElement(`div`);
+    noteCard.classList.add("note");
 
-  let noteTitle = document.createElement(`p`);
-  noteTitle.classList.add(`title`);
-  noteTitle.textContent = titleInput.value;
+    let noteTitle = document.createElement(`p`);
+    noteTitle.classList.add(`title`);
+    noteTitle.textContent = titleInput.value;
 
-  let hRule = document.createElement(`hr`);
+    let hRule = document.createElement(`hr`);
 
-  let contentOfCard = document.createElement(`p`);
-  contentOfCard.classList.add(`noteContent`);
+    let contentOfCard = document.createElement(`p`);
+    contentOfCard.classList.add(`noteContent`);
 
-  let span = document.createElement(`span`);
-  span.contentEditable = true;
-  contentOfCard.appendChild(span);
+    let span = document.createElement(`span`);
+    span.contentEditable = true;
 
-  let closeBtnContainer = document.createElement(`div`);
-  closeBtnContainer.classList.add(`closeBtnContainer`);
+    let closeBtnContainer = document.createElement(`div`);
+    closeBtnContainer.classList.add(`closeBtnContainer`);
 
-  let closeBtn = document.createElement(`button`);
-  closeBtn.classList.add(`delContBtn`);
-  closeBtn.textContent = `Delete`;
-  closeBtn.addEventListener("click", () => {
-    noteCard.remove();
-  });
-  closeBtnContainer.appendChild(closeBtn);
+    let closeBtn = document.createElement(`button`);
+    closeBtn.classList.add(`delContBtn`);
+    closeBtn.textContent = `Delete`;
+    closeBtn.addEventListener("click", () => {
+        noteCard.remove();
+    });
+    closeBtnContainer.appendChild(closeBtn);
+    contentOfCard.appendChild(span);
+    noteCard.appendChild(noteTitle);
+    noteCard.appendChild(hRule);
+    noteCard.appendChild(contentOfCard);
+    noteCard.appendChild(closeBtnContainer);
 
-  noteCard.appendChild(noteTitle);
-  noteCard.appendChild(hRule);
-  noteCard.appendChild(contentOfCard);
-  noteCard.appendChild(closeBtnContainer);
-
-  main.appendChild(noteCard);
+    main.appendChild(noteCard);
 });
