@@ -1,7 +1,31 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
 body {
+    gap: 20px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.topContainer {
+    overflow: hidden;
+    border: solid black 3px;
+    border-radius: 20px;
+}
+
+.btns {
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
+.btns:hover {
+    opacity: 50%;
+}
+.btns:active {
+    background-color: blue;
 }

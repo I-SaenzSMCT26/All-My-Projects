@@ -1,23 +1,37 @@
 "use strict";
 
 // these are the buttons for the page
-let buttonGB = document.querySelector("#goodby");
-let nvM = document.querySelector("#nvm");
+let goodbye = document.querySelector("#goodby");
+let neverMind = document.querySelector("#nvm");
 let pullMyDigit = document.querySelector("#pullMyDigit");
-
+//
+//
+//
+//
+//
 // these are html elements
 let title = document.querySelector("h1").textContent;
 let topCont = document.querySelector(".topContainer");
-
+//
+//
+//
+//
+//
 //these add text content
-buttonGB.addEventListener("click", () => {
+goodbye.addEventListener("click", goodbyeText);
+function goodbyeText() {
     document.querySelector("h1").innerHTML = "good bye";
-});
+}
 
-nvM.addEventListener("click", () => {
+neverMind.addEventListener("click", helloText);
+function helloText() {
     document.querySelector("h1").innerHTML = title;
-});
-
+}
+//
+//
+//
+//
+//
 // this function is to add an image into the DOM and remove h1 one
 let hasBeenClicked = false;
 
@@ -38,6 +52,6 @@ pullMyDigit.addEventListener("click", () => {
 
         createGasImage();
     }
+    goodbye.removeEventListener("click", goodbyeText);
+    neverMind.removeEventListener("click", helloText);
 });
-
-buttonGB.addEventListener("click");
