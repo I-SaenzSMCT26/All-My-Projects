@@ -41,7 +41,7 @@ function clearHeading() {
 
 function createGasImage() {
     let image = document.createElement("img");
-    image.src = "images/fartingundies-1501850018.avif";
+    image.src = "../fartingundies-1501850018.avif";
     topCont.appendChild(image);
     clearHeading();
 }
