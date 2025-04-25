@@ -35,6 +35,9 @@ function createGasImage() {
 pullMyDigit.addEventListener("click", () => {
     if (!hasBeenClicked) {
         hasBeenClicked = true;
+
         createGasImage();
     }
 });
+
+buttonGB.addEventListener("click");
