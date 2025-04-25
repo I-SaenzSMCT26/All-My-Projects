@@ -1,12 +1,15 @@
+"use strict";
+
 // these are the buttons for the page
 let buttonGB = document.querySelector("#goodby");
 let nvM = document.querySelector("#nvm");
 let pullMyDigit = document.querySelector("#pullMyDigit");
 
-// these
+// these are html elements
 let title = document.querySelector("h1").textContent;
-let body = document.querySelector("body");
+let topCont = document.querySelector(".topContainer");
 
+//these add text content
 buttonGB.addEventListener("click", () => {
     document.querySelector("h1").innerHTML = "good bye";
 });
@@ -15,13 +18,23 @@ nvM.addEventListener("click", () => {
     document.querySelector("h1").innerHTML = title;
 });
 
+// this function is to add an image into the DOM and remove h1 one
+let hasBeenClicked = false;
+
+function clearHeading() {
+    document.querySelector("h1").innerHTML = null;
+}
+
+function createGasImage() {
+    let image = document.createElement("img");
+    image.src = "images/fartingundies-1501850018.avif";
+    topCont.appendChild(image);
+    clearHeading();
+}
+
 pullMyDigit.addEventListener("click", () => {
-    let gasImg = document.createElement("img");
-    gasImg.src = "images/fartingundies-1501850018.avif";
-    body.appendChild(gasImg);
-    function del() {
-        let deletE = (document.querySelector("h1").innerHTML = " ");
-        return deletE;
+    if (!hasBeenClicked) {
+        hasBeenClicked = true;
+        createGasImage();
     }
-    del();
 });
