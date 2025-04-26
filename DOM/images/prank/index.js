@@ -1,8 +1,8 @@
 "use strict";
 
 // these are the buttons for the page
-let goodbye = document.querySelector("#goodby");
-let neverMind = document.querySelector("#nvm");
+let goodByeBtn = document.querySelector("#goodby");
+let neverMindBtn = document.querySelector("#nvm");
 let pullMyDigit = document.querySelector("#pullMyDigit");
 //
 //
@@ -18,12 +18,12 @@ let topCont = document.querySelector(".topContainer");
 //
 //
 //these add text content
-goodbye.addEventListener("click", goodbyeText);
+goodByeBtn.addEventListener("click", goodbyeText);
 function goodbyeText() {
     document.querySelector("h1").innerHTML = "good bye";
 }
 
-neverMind.addEventListener("click", helloText);
+neverMindBtn.addEventListener("click", helloText);
 function helloText() {
     document.querySelector("h1").innerHTML = title;
 }
@@ -56,8 +56,13 @@ pullMyDigit.addEventListener("click", () => {
         hasBeenClicked = true;
         createGasImage();
     }
+<<<<<<< HEAD
 
     goodbye.removeEventListener("click", goodbyeText);
 
     neverMind.removeEventListener("click", helloText);
+=======
+    goodByeBtn.removeEventListener("click", goodbyeText);
+    neverMindBtn.removeEventListener("click", helloText);
+>>>>>>> e3ba575a33b92e850078cffabd4a79a3733ba739
 });
