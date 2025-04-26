@@ -56,13 +56,6 @@ pullMyDigit.addEventListener("click", () => {
         hasBeenClicked = true;
         createGasImage();
     }
-<<<<<<< HEAD
-
-    goodbye.removeEventListener("click", goodbyeText);
-
-    neverMind.removeEventListener("click", helloText);
-=======
     goodByeBtn.removeEventListener("click", goodbyeText);
     neverMindBtn.removeEventListener("click", helloText);
->>>>>>> e3ba575a33b92e850078cffabd4a79a3733ba739
 });
