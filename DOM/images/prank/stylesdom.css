@@ -10,12 +10,17 @@ body {
     justify-content: center;
     align-items: center;
 }
+/*  */
+/*  */
+/*  */
 .topContainer {
     overflow: hidden;
     border: solid black 3px;
     border-radius: 20px;
 }
-
+/*  */
+/*  */
+/* buttons section */
 .btns {
     border: none;
     border-radius: 5px;

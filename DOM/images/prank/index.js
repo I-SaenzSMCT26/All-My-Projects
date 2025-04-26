@@ -9,7 +9,7 @@ let pullMyDigit = document.querySelector("#pullMyDigit");
 //
 //
 //
-// these are html elements
+// this is the h1 tag and the container h1 tag
 let title = document.querySelector("h1").textContent;
 let topCont = document.querySelector(".topContainer");
 //
@@ -38,20 +38,26 @@ let hasBeenClicked = false;
 function clearHeading() {
     document.querySelector("h1").innerHTML = null;
 }
-
+//
+//
 function createGasImage() {
     let image = document.createElement("img");
+
     image.src = "../fartingundies-1501850018.avif";
+
     topCont.appendChild(image);
+
     clearHeading();
 }
-
+//
+//
 pullMyDigit.addEventListener("click", () => {
     if (!hasBeenClicked) {
         hasBeenClicked = true;
-
         createGasImage();
     }
+
     goodbye.removeEventListener("click", goodbyeText);
+
     neverMind.removeEventListener("click", helloText);
 });
