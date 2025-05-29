@@ -3,9 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="fishingCombo.css" />
         <title>rod-connect.com</title>
         <style></style>
@@ -15,18 +12,31 @@
         <div id="comboContainer">
             <!-- this is the left side where all the inputs/searching goes on -->
             <div id="leftSide">
+
+
+                <!-- type selection dropdown menu -->
                 <div id="typeContainer">
                     <h1 class="type">
                         Type
                         <button class="typeSelector"></button>
                     </h1>
+
+                </div>
+                <div id="type2Container">
+                    <h1>
+                        <button class="type2">TYPE</button>
+                    </h1>
+                </div>
+                <!-- input -->
+                <div id="inPContainer">
+                    <input class="inP" type="text" placeholder="Rod" />
+                    <button class="addBtn">&plus;</button>
                 </div>
 
-                <div id="inPContainer">
-                    <input class="inP rod" type="text" placeholder="Rod" />
-                    <button>&plus;</button>
-                </div>
+
             </div>
+
+
             <!-- this is where all the filtering will show up -->
             <div class="rightoutputContainer">
                 <div class="dropDown Rod"></div>

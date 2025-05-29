@@ -1,8 +1,6 @@
 * {
     padding: none;
-    margin: none;
-    border: solid blue 1px;
-    font-family: "Ubuntu", sans-serif;
+    margin: 0;
 }
 html {
     height: 100vh;
@@ -11,7 +9,11 @@ body {
     height: 100vh;
     align-content: center;
     justify-items: center;
-    background-image: linear-gradient(to bottom, rgba(138, 186, 209, 1) 70%, rgba(0, 0, 0, 0)), linear-gradient(to right, rgb(109, 211, 169), rgb(43, 104, 133));
+    background-image: linear-gradient(to bottom, rgba(138, 186, 209, 1) 70%, rgba(0,
+     0,
+     0,
+     0)
+    ), linear-gradient(to right, rgb(109, 211, 169), rgb(43, 104, 133));
 }
 /* this is the container for everything*/
 #comboContainer {
@@ -25,7 +27,11 @@ body {
 
     border-radius: 50px;
     background-color: white;
-    box-shadow: -6px 6px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: -6px 6px 20px rgba(0,
+     0,
+     0,
+     0.
+    3);
 }
 /* this is the container for  */
 #leftSide {
@@ -44,17 +50,19 @@ body {
     border-radius: 35px;
 }
 /* this is the container for the type selection */
-.typeContainer {
-    width: 80%;
+#typeContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+}
+#type2Container{
+    display: none;
 }
 .type {
     overflow: hidden;
     display: flex;
-    height: 40px;
+    height: 20px;
     width: 180px;
     text-align: center;
     align-content: center;
@@ -64,29 +72,16 @@ body {
     border-radius: 5px;
 }
 .typeSelector {
-    margin-left: 80px;
     height: 50px;
     width: 50px;
 }
-/* this is the container for all the inputs */
-.containerForInputs {
-    height: 58%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.rightoutputContainer {
-    gap: 20px;
-    width: 60%;
-    height: 100%;
-    border-radius: 50px;
-    background-color: #2c2c2c;
-}
 
+
+/* this is all the css for the input section */
 #inPContainer {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    gap: 10px;
 }
 
 .inP {
@@ -106,23 +101,18 @@ body {
     background-color: rgb(153, 153, 153);
 }
 .inP::placeholder {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0,0,0,0.8);
 }
-button {
-    color: black;
-    font-size: 13pt;
-    font-weight: bold;
-    background-color: gray;
-    align-content: center;
-    text-align: center;
-    height: 35px;
-    width: 30px;
-    border-radius: 5px;
-    border: none;
-}
-button:hover {
-    background-color: white;
-    color: blue;
+
+
+
+/* this is the right/top side of the container where the filtered data will be displayed */
+.rightoutputContainer {
+    gap: 20px;
+    width: 60%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: #2c2c2c;
 }
 .dropDown {
     position: absolute;
@@ -135,5 +125,54 @@ button:hover {
 @media (max-width: 1580px) {
     #comboContainer {
         flex-direction: column;
+        width: 70%;
+        height: 77%;
+    }
+    #leftSide{
+        margin-left: 0;
+        margin-top: 20px;        
+        width: 80%;
+        align-items: flex-start;
+    }
+    #leftSide{
+        align-items: center;
+
+    }
+
+    #typeContainer{
+        display: none;
+    }
+    #type2Container{
+        display: flex;
+    }
+    .type2{
+        width: clamp(40px,50vw,300px);
+        height: 80px;
+        border-radius: 20px;
+        font-size: calc(1rem + 3vw);
+        font-weight: bold;
+    }
+    /* rod selection menu section */
+    #inPContainer{
+        justify-content: center;
+    }
+    .inP{
+        font-size: 20pt;
+        height: 50px;
+        width: clamp(20px, 500px);
+    }
+    .addBtn{
+        background-color: slategray;
+        border: none;
+        border-radius: 10px;
+        font-size: 13pt;
+        height: 100%;
+        width: 60px;
+        padding: 6px;
+    } 
+
+    /* right side container */
+    .rightoutputContainer{
+        width: 100%;
     }
 }

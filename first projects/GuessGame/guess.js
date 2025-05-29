@@ -9,6 +9,9 @@ let points = 0;
 let playOnceOnly = false;
 let addPointsOnce = false;
 
+
+
+// result sounds and restart(again)
 let youWin = new Audio();
 youWin.src = "sound effects/you-win.mp3";
 let youLose = new Audio();
@@ -16,11 +19,17 @@ youLose.src = "sound effects/you-lose.mp3";
 let againButton = new Audio();
 againButton.src = "sound effects/again.mp3";
 
+
+
+// these are the puls and minus button sounds
 let plusSound = new Audio();
 plusSound.src = "sound effects/plusbtn.mp3";
 let minusSound = new Audio();
 minusSound.src = "sound effects/minusbtn.mp3";
 
+
+
+// these are the sounds for the wrong input number when you click check
 let wrongNumber1 = new Audio();
 wrongNumber1.src = "wrong number sounds/wrong-number-1.mp3";
 let wrongNumber2 = new Audio();
