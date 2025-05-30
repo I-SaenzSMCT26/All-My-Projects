@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: monospace;
-  /* border: solid black 2px; */
+  border: solid black 2px;
 }
 
 body {
@@ -133,17 +133,17 @@ hr {
   outline: none;
   color: gray;
 }
-.closeBtnContainer {
+.bottomContainer{
+  display: flex;
+  justify-content: flex-end;
+  transform: translate(5%, 20%);
+}
+.bottomBtnsContainers, .bottomBtnsContainers2 {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 40px;
-  height: 40px;
-  transform: translate(50%, 10%);
-  justify-self: end;
 }
-.delContBtn {
-  display: flex;
+.delContBtn,.saveBtn {
   justify-content: center;
   align-items: center;
   font-size: 7.7pt;
@@ -158,21 +158,21 @@ hr {
   transition: 0.1s ease-in-out;
 }
 
-.delContBtn:hover {
+.delContBtn:hover, .saveBtn:hover {
   background-color: #ffffff;
   overflow: hidden;
   color: #428d90;
-  animation: delHover 0.25s ease-in-out forwards;
+  animation: Hover 0.25s ease-in-out forwards;
 }
-.delContBtn:active {
+.delContBtn:active, .saveBtn:active{
   background-color: #c33b3b;
   color: white;
 }
-.delContBtn:not(:hover) {
-  animation: delHoverReverse 0.25s ease-in-out forwards;
+.delContBtn:not(:hover), .saveBtn:not(:hover) {
+  animation: HoverReverse 0.25s ease-in-out forwards;
 }
 
-@keyframes delHover {
+@keyframes Hover {
   0% {
     width: 20px;
     height: 20px;
@@ -183,7 +183,7 @@ hr {
   }
 }
 
-@keyframes delHoverReverse {
+@keyframes HoverReverse {
   0% {
     width: 55px;
     height: 20px;
